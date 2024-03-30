@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-grey: #0a0a23;
+  --white: #ffffff;
+  --purple: #5a01ab;
+  --green: #00471b;
+  --blue: #012ca4;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--dark-grey);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
