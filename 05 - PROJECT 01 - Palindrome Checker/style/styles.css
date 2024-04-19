@@ -83,7 +83,12 @@ body {
   overflow-y: auto;
   word-wrap: break-word;
   min-height: 50px;
+  font-size: 1.4rem;
   color: black;
+}
+
+.user-input {
+  margin-top: 10px;
 }
 
 .hidden {
