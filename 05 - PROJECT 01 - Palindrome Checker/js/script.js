@@ -35,3 +35,10 @@ checkButton.addEventListener("click", () => {
   checkPalindrome(textInput.value);
   textInput.value = "";
 });
+
+textInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkPalindrome(textInput.value);
+    textInput.value = "";
+  }
+});
