@@ -4,14 +4,24 @@ const output = document.getElementById("output");
 
 function checkInputValue() {
   if (!inputNumber.value) {
+    updateAnError();
     output.textContent = "Please enter a valid number";
   } else if (inputNumber.value <= 0) {
+    updateAnError();
     output.textContent = "Please enter a number greater than or equal to 1";
   } else if (inputNumber.value > 3999) {
+    updateAnError();
     output.textContent = "Please enter a number less than or equal to 3999";
   } else {
+    output.classList.remove("error");
+    output.classList.remove("hidden");
     output.textContent = convertToRoman(inputNumber.value);
   }
+}
+
+function updateAnError() {
+  output.classList.remove("hidden");
+  output.classList.add("error");
 }
 
 function convertToRoman(num) {
