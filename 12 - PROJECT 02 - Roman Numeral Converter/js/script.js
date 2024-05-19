@@ -4,7 +4,7 @@ const output = document.getElementById("output");
 
 // The validateInputValue function checks if the input is a valid number and within a specific range.
 function validateInputValue(inputValue) {
-  if (!inputValue || Number.isNaN(inputValue)) {
+  if (!inputValue && Number.isNaN(inputValue)) {
     return "Please enter a valid number";
   } else if (inputValue <= 0) {
     return "Please enter a number greater than or equal to 1";
