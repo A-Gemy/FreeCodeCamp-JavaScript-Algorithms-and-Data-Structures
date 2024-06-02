@@ -1,0 +1,100 @@
+:root {
+  --white: #ffffff;
+  --gray-05: #f5f6f7;
+  --gray-15: #d0d0d5;
+  --gray-75: #3b3b4f;
+  --blue-50: #198eee;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  font-size: 18px;
+  background-color: var(--gray-05);
+  color: var(--gray-75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+h1 {
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.input-filed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.input-filed input {
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-align: center;
+  caret-color: var(--blue-50);
+}
+
+.input-filed input:focus-visible {
+  border: 2px solid var(--blue-50);
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 60%;
+}
+
+.control button {
+  flex: 1 1 80px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: var(--blue-50);
+  border: 1px solid var(--blue-50);
+  color: var(--gray-05);
+  cursor: pointer;
+}
+
+#results-div {
+  font-size: 20px;
+  font-weight: bold;
+}
